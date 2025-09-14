@@ -13,4 +13,10 @@ export default defineConfig({
   
   // Enable static mode
   output: 'static',
+  
+  // Configure dev server to use IPv4 and allow LAN access
+  server: {
+    host: '0.0.0.0',  // 允许所有网络接口访问（包括局域网）
+    port: 4321
+  }
 });

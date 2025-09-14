@@ -1,8 +1,27 @@
 ---
 const platform = "github";
 const username = "withastro";
+
+const pf1 = "youtube"
+const un1 = "hala"
+
+import Social from './social.astro';
 ---
 
+<style>
+  footer {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+</style>
+
 <footer>
-  <p>在 <a href={`https://www.${platform}.com/${username}`}>{platform}</a> 上，了解有关我的项目的更多信息！</p>
+ <!-- <p>在 <a href={`https://www.${platform}.com/${username}`}>{platform}</a> 上，了解有关我的项目的更多信息！</p> -->
+ <!-- <p>在 <a href={`https://www.${pf1}.com/${un1}`}>{pf1}</a> 上找到我！</p> -->
+
+  <Social platform="twitter" username="astrodotbuild" />
+  <Social platform="github" username="withastro" />
+  <Social platform="youtube" username="astrodotbuild" />
+
 </footer>
